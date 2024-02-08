@@ -1,0 +1,48 @@
+ /* Style the header of the website */
+ header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Style the main content area of the website */
+  main {
+    padding: 20px;
+  }
+  
+  /* Style the portfolio section */
+  .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+   /* Style the portfolio items */
+.portfolio-item {
+    background-color: #f1f1f1;
+    flex-basis: calc(33.33% - 10px);
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+    grid-template-columns: 1fr;
+  }
+  section img{
+    grid-template-columns: 1fr;
+  }
+  .portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+  }
+  /* Style the footer of the website */
+ footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  /* Media query to make the layout responsive on smaller screens */
+  @media (max-width: 600px) {}
+    .portfolio-grid {
+      grid-template-columns: 1fr;
+    }
